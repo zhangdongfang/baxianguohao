@@ -12,17 +12,14 @@ import org.springframework.web.client.RestTemplate;
  * @date:19-11-26
  */
 @RestController
-public class TestController {
+public class TemplateController {
 
-
-    //private final RestTemplate restTemplate;
 
     @Autowired
-    //public TestController(RestTemplate restTemplate) {this.restTemplate = restTemplate;}
     private  RestTemplate restTemplate;
 
-    @RequestMapping(value = "/echo/{str}", method = RequestMethod.GET)
-    public String echo(@PathVariable String str) {
-        return restTemplate.getForObject("http://mall-service/echo/" + str, String.class);
+    @RequestMapping(value = "/test", method = RequestMethod.GET)
+    public String test() {
+        return restTemplate.getForObject("http://mall-service/echo/", String.class);
     }
 }

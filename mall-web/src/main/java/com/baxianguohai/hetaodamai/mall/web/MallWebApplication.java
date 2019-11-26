@@ -11,11 +11,6 @@ import org.springframework.web.client.RestTemplate;
 @EnableDiscoveryClient
 public class MallWebApplication {
 
-    @LoadBalanced
-    @Bean
-    public RestTemplate restTemplate() {
-        return new RestTemplate();
-    }
 
     public static void main(String[] args) {
         SpringApplication.run(MallWebApplication.class, args);
