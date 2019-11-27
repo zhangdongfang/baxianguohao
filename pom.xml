@@ -13,6 +13,7 @@
         <module>mall-service</module>
         <module>mall-core</module>
         <module>mall-entity</module>
+        <module>mall-service-api</module>
     </modules>
 
     <!-- 公共的一些属性 -->
