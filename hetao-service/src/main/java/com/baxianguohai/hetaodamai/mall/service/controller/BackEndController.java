@@ -3,7 +3,6 @@ package com.baxianguohai.hetaodamai.mall.service.controller;
 
 import com.baxianguohai.hetaodamai.mall.entity.bo.LogBo;
 import com.baxianguohai.hetaodamai.mall.service.service.LogService;
-import com.baxianguohao.hetaodamai.mall.service.api.BackEndApi;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -14,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @date:19-11-26
  */
 @RestController
-class BackEndController implements BackEndApi {
+class BackEndController {
     @Autowired
     private LogService logService;
     @RequestMapping(value = "/test", method = RequestMethod.GET)
