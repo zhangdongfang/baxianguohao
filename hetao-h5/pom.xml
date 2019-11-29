@@ -9,9 +9,9 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <groupId>com.baxianguohai.hetaodamai</groupId>
-    <artifactId>mall-web</artifactId>
+    <artifactId>hetao-h5</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>mall-web</name>
+    <name>hetao-h5</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -102,17 +102,11 @@
             <artifactId>nacos-client</artifactId>
             <version>${alibaba-nacos-client}</version>
         </dependency>
-        <dependency>
-            <groupId>com.baxianguohai.hetaodamai</groupId>
-            <artifactId>mall-service-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
     </dependencies>
 
     <!--将本项目打包成一个对应的jar包-->
     <build>
-        <finalName>mall-web</finalName>
+        <finalName>hetao-h5</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>

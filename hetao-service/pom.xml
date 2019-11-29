@@ -9,9 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.baxianguohai.hetaodamai</groupId>
-    <artifactId>mall-service</artifactId>
+    <artifactId>hetao-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>mall-service</name>
+    <name>hetao-service</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -101,13 +101,7 @@
         </dependency>
         <dependency>
             <groupId>com.baxianguohai.hetaodamai</groupId>
-            <artifactId>mall-entity</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.baxianguohai.hetaodamai</groupId>
-            <artifactId>mall-service-api</artifactId>
+            <artifactId>hetao-entity</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
@@ -115,7 +109,7 @@
 
     <!--将本项目打包成一个对应的jar包-->
     <build>
-        <finalName>mall-service</finalName>
+        <finalName>hetao-service</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
